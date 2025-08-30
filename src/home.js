@@ -1,5 +1,10 @@
-const homePage = (function () {
+const home = (function () {
     const content = document.querySelector('#content');
+
+    const changeContent = () => {
+      content.style.gridTemplateRows = 'repeat(3, 1fr)';
+    };
+
     const createHeadline = () => {
         const headline = document.createElement('div');
         headline.classList.add('headline')
@@ -72,6 +77,7 @@ const homePage = (function () {
 
 
     const createLayout = () => {
+        changeContent()
         createLogo();
         createHeadline();
         createHours();
@@ -81,4 +87,4 @@ const homePage = (function () {
     return {createLayout}
 })()
 
-export {homePage};
+export {home};

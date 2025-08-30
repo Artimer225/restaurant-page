@@ -2,11 +2,32 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Garet Book', sans-serif;
 }
 
 body p {
     margin: 0;
 }
+
+@font-face {
+    font-family: 'Garet Book';
+    src: url('fonts/Garet-Book.woff2') format('woff2'),
+        url('fonts/Garet-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Garet';
+    src: url('fonts/Garet-Heavy.woff2') format('woff2'),
+        url('fonts/Garet-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 body {
     background: #06060d;
@@ -27,7 +48,7 @@ nav button {
     border: 1px solid white;
     background-color: transparent;
     color: white;
-    font-size: xx-large;
+    font: xx-large 'Garet Book';
 }
 
 nav button:hover {
@@ -45,8 +66,7 @@ nav button:active {
 
 #content {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 2px;
 }
 
@@ -121,4 +141,27 @@ nav button:active {
     grid-column: 2 / 3;
     column-gap: 40px;
     align-items: start;
+}
+
+.main {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    font-size: large;
+    gap: 50px;
+}
+
+.main .img {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.main .wrapper p:first-of-type {
+    place-self: center;
+    margin-bottom: 10px;
+    font: x-large 'Garet';
 }
