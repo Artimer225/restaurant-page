@@ -74,7 +74,7 @@ nav button:active {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     place-items: center;
-    margin-top: 160px;
+    margin-top: 120px;
 }
 
 .logo p:first-of-type {
@@ -90,14 +90,14 @@ nav button:active {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     color: white;
-    border: 1px solid red;
+    border: 1px solid #EA2264;
     border-radius: 10px;
     display: grid;
     place-self: center;
     padding: 10px;
 }
 
-.headline .quote {
+.quote {
     font-size: xx-large;
 }
 
@@ -110,7 +110,7 @@ nav button:active {
     color: white;
     font-size: x-large;
     grid-column: 1 / 2;
-    border: 1px solid red;
+    border: 1px solid #EA2264;
     border-radius: 10px;
     place-items: center;
     padding: 10px;
@@ -126,7 +126,7 @@ nav button:active {
     color: white;
     font-size: x-large;
     grid-column: 2 / 3;
-    border: 1px solid red;
+    border: 1px solid #EA2264;
     border-radius: 10px;
     padding: 10px;
 }
@@ -153,7 +153,7 @@ nav button:active {
 }
 
 .main .img {
-    border: 1px solid red;
+    border: 1px solid #EA2264;
     border-radius: 10px;
     padding: 10px;
     height: 100px;
@@ -164,4 +164,23 @@ nav button:active {
     place-self: center;
     margin-bottom: 10px;
     font: x-large 'Garet';
+}
+
+.about {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: white;
+    border-radius: 10px;
+    display: grid;
+    place-self: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.about .quote {
+    margin-bottom: 30px;
+}
+
+.about span {
+    font: medium 'Garet';
 }

@@ -1,6 +1,7 @@
 import './styles.css';
 import { home } from './home.js';
 import { menu } from './menu.js';
+import { about } from './about.js';
 
 class SectionManager {
     constructor() {
@@ -26,7 +27,8 @@ class SectionManager {
         });
 
         aboutPage.addEventListener('click', e => {
-
+            clearContent()
+            about.createLayout()
         });
     }
 }
